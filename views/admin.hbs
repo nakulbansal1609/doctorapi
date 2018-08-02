@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  </head>
+  <body>
+    <form id="change-token" action="/admin/changeToken" method="GET">
+      <div class="container">
+        <h1>Welcome to Admin Page</h1>
+        <br></br>
+        <button value="p" id="prev" class="btn btn-primary" name="pbutton">Prev</button>
+        <button value="n" id="next" class="btn btn-primary" name="nbutton">Next</button>
+        <br></br>
+        <button class="btn btn-danger btn-lg">{{ getCurrentToken }}</button>
+        <br></br>
+        <button value="r" id="reset" class="btn btn-warning" name="rbutton">Reset</button>
+      </div>
+    </form>
+
+    
+
+  </body>
+</html>
