@@ -3,6 +3,7 @@ const hbs = require('hbs');
 
 const fs = require('fs'   );
 
+const port = process.env.PORT || 3000;
 var app = express();
 
 app.set('view engine', 'hbs');
@@ -48,7 +49,7 @@ app.get('/', (req, res) => {
   })
 });
 
-  
+
 app.get('/admin', (req, res) => {
   res.render('admin.hbs', {
   getCurrentToken: tokenValue
@@ -71,6 +72,6 @@ if (req.query.rbutton) {
 };
 res.redirect('/admin');
 });
-app.listen(3000, () => {
-  console.log('The server is running on port 3000');
+app.listen(port, () => {
+  console.log(`The server is running on port ${port}`);
 });
