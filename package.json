@@ -1,6 +1,14 @@
   {
   "name": "doctorapi",
   "version": "1.0.0",
+  "repository": {
+	  "type": "git",
+	  "url": "https://github.com/nakulbansal1609/doctorapi.git"
+  },
+  "engines": {
+	  "node": "8.x.x"
+},
+
   "description": "",
   "main": "index.js",
   "scripts": {
